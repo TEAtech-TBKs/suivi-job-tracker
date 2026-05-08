@@ -135,8 +135,8 @@ const Home = () => {
 
   return (
     <>
-      <div className="main bg-[rgb(var(--bg))] min-h-screen">
-        <div className="home bg-[rgb(var(--bg))] bg-linear-to-b from-[rgb(var(--background))] to-[rgb(var(--gradientB))] min-h-screen">
+      <div className="main bg-[rgb(var(--bg))] min-h-screen ">
+        <div className="home bg-linear-to-b from-[rgb(var(--background))] to-[rgb(var(--gradientB))] min-h-screen">
           <Navbar/>
           <div className="hero-section flex flex-col lg:flex-row items-center justify-between gap-10 px-6 lg:px-20 pt-10 lg:pt-15 overflow-hidden">
   
@@ -191,7 +191,7 @@ const Home = () => {
           </div>
 
                     {/* Stay on top of your search */}
-           <section className="py-16 px-6 md:px-12 bg-[rgb(var(--bg))] ">
+           <section className="py-16 px-6 md:px-12 bg-[rgb(var(--bg))]  bg-linear-to-t from-[rgb(var(--background))] to-[rgb(var(--gradientB))]">
               <div className="max-w-7xl mx-auto">
                 
                 {/* Title */}
@@ -225,7 +225,7 @@ const Home = () => {
            </section>
 
                                 {/* What we do */}
-              <section className="py-20 px-6 md:px-12 bg-[rgb(var(--bg))]">
+              <section className="py-20 px-6 md:px-12 bg-[rgb(var(--bg))]  bg-linear-to-b from-[rgb(var(--background))] to-[rgb(var(--gradientB))]">
                 <div className="max-w-7xl mx-auto">
                   
                   {/* Header Section */}
@@ -270,7 +270,7 @@ const Home = () => {
               </section>
 
                 {/* Job seekers sec */}
-                <section className="py-20 px-6 md:px-12 lg:px-20 bg-[rgb(var(--bg))]">
+                <section className="py-20 px-6 md:px-12 lg:px-20 bg-[rgb(var(--bg))]  bg-linear-to-t from-[rgb(var(--background))] to-[rgb(var(--gradientB))]">
                   <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
                     
                     {/* Illustration Side */}
@@ -402,49 +402,54 @@ const Home = () => {
           </section>                    
 
 
-                  <div className="mx-6 md:mx-12 mb-20">
-  <div className="relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-8 px-8 py-12 rounded-2xl bg-linear-to-r from-[rgb(var(--primary))] to-[rgb(var(--primary))] text-[rgb(var(--bg))] shadow-xl">
-    
-    {/* Message Content */}
-    <div className="max-w-2xl space-y-4">
-      <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-        Ready to take control of your job search?
-      </h2>
-      <p className="text-lg opacity-90 max-w-md">
-        Join thousands of people who are getting more interviews and better offers with Suivi.
-      </p>
-      
-      {/* Benefits List */}
-      <ul className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-4 text-sm font-medium opacity-90">
-        <li className="flex items-center gap-2">
-          <CircleCheck className="w-5 h-5" />
-          Free to start
-        </li>
-        <li className="flex items-center gap-2">
-          <li className="list-disc ml-4"></li>
-          <CircleCheck className="w-5 h-5" />
-          No credit card required
-        </li>
-        <li className="flex items-center gap-2">
-          <li className="list-disc ml-4"></li>
-          <CircleCheck className="w-5 h-5" />
-          Cancel anytime
-        </li>
-      </ul>
-    </div>
+         <div className="mx-6 md:mx-12 mb-20 ">
+            <div className="relative overflow-hidden 
+                flex flex-col lg:flex-row items-center 
+                justify-between gap-8 px-8 py-6 rounded-2xl 
+                bg-linear-to-r from-[rgb(var(--primary))] to-[rgb(var(--primary))]
+                text-[rgb(var(--bg))] text-shadow-lg shadow-xl"
+            >
+              
+              {/* Message Content */}
+              <div className="max-w-2xl space-y-4">
+                <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+                  Ready to take control of your job search?
+                </h2>
+                <p className="text-lg opacity-90 max-w-md">
+                  Join thousands of people who are getting more interviews and better offers with Suivi.
+                </p>
+                
+                {/* Benefits List */}
+                <ul className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-4 text-sm font-medium opacity-90">
+                  <li className="flex items-center gap-2">
+                    <CircleCheck className="w-5 h-5" />
+                    Free to start
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <li className="list-disc ml-4"></li>
+                    <CircleCheck className="w-5 h-5" />
+                    No credit card required
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <li className="list-disc ml-4"></li>
+                    <CircleCheck className="w-5 h-5" />
+                    Cancel anytime
+                  </li>
+                </ul>
+              </div>
 
-    {/* Action Button */}
-    <div className="relative z-10 shrink-0">
-      <button className="group flex items-center gap-2 bg-[rgb(var(--bg))] text-[rgb(var(--primary))] px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-all shadow-md">
-        Get Started Free
-        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-      </button>
-    </div>
+              {/* Action Button */}
+              <div className="relative z-10 shrink-0">
+                <button className="group flex items-center gap-2 bg-[rgb(var(--bg))] text-[rgb(var(--primary))] px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-all shadow-md">
+                  Get Started Free
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </button>
+              </div>
 
-    {/* Subtle Decorative Circle */}
-    <div className="absolute -right-16 -top-16 h-64 w-64 rounded-full bg-white/10 blur-3xl pointer-events-none" />
-  </div>
-</div>
+              {/* Subtle Decorative Circle */}
+              <div className="absolute -right-16 -top-16 h-64 w-64 rounded-full bg-white/10 blur-3xl pointer-events-none" />
+            </div>
+         </div>
                   <Footer/>
           </div>
           
