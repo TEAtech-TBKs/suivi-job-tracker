@@ -8,4 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+    base: '/suivi-job-tracker/'
 })
