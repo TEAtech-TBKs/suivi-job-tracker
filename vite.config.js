@@ -8,5 +8,4 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: 'https://teatech-tbks.github.io/suivi-job-tracker/'
 })
