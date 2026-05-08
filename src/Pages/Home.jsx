@@ -323,7 +323,7 @@ const Home = () => {
                       {/* Optional: Add a call to action button here to make it a true CTA */}
                       <div className="pt-4">
                         <button className="bg-[rgb(var(--primary))] text-[rgb(var(--bg))] px-8 py-3 rounded-full font-bold hover:brightness-110 transition-all shadow-lg shadow-[rgba(var(--primary),0.3)]">
-                          Start Tracking Now
+                          Start Tracking Now.
                         </button>
                       </div>
                     </div>
