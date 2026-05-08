@@ -16,6 +16,8 @@
   --card-border: 186, 186, 186, 0.3;
 
   --footerbg:  18 18 18;
+  --footertxt: 255 255 255;
+
 
 }
 
@@ -35,6 +37,7 @@
   --card-border: 69, 69, 69;
 
   --footerbg: 23 58 3;
+  --footertxt:255 255 255;
 }
 *{
   font-family: 'Raleway';

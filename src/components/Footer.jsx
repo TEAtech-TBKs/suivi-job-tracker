@@ -1,38 +1,42 @@
-import React, { useEffect, useState } from 'react';
+// import React, { useEffect, useState } from 'react';
 import LogoLight from '../assets/Suivi-logo/SUIVI-lightmode.png'
 import LogoDark from '../assets/Suivi-logo/SUIVI-darkmode.png'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-  const [dark, setDark] = useState(false);
+  // const [dark, setDark] = useState(false);
 
-  useEffect(() => {
-    const checkTheme = () => {
-      setDark(document.documentElement.classList.contains("dark"));
-    };
+  // useEffect(() => {
+  //   const checkTheme = () => {
+  //     setDark(document.documentElement.classList.contains("dark"));
+  //   };
 
-    checkTheme(); // run on mount
+  //   checkTheme(); // run on mount
 
-    // Listen for changes (important!)
-    const observer = new MutationObserver(checkTheme);
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ["class"],
-    });
+  //   // Listen for changes (important!)
+  //   const observer = new MutationObserver(checkTheme);
+  //   observer.observe(document.documentElement, {
+  //     attributes: true,
+  //     attributeFilter: ["class"],
+  //   });
 
-    return () => observer.disconnect();
-  }, []);
+  //   return () => observer.disconnect();
+  // }, []);
 
   return (
-    <footer className="bg-[rgb(var(--footerbg))] text-[rgb(var(--text))] py-12 px-6 md:px-12 border-t border-[rgba(var(--card-border))]">
+    <footer className="bg-[rgb(var(--footerbg))] text-[rgb(var(--footertxt))] py-12 px-6 md:px-12 border-t border-[rgba(var(--card-border))]">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           
           {/* Brand Section */}
           <div className="lg:col-span-1">
                   <img 
-                    src={dark ? LogoDark : LogoLight} 
+                    src={
+                      //dark ? 
+                      LogoDark 
+                      //: LogoLight
+                    } 
                     alt="suivi" 
                     className="logo w-32" 
                   />

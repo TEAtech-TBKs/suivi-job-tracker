@@ -56,7 +56,7 @@ const Home = () => {
   },
   {
     title: "Reminders",
-    desc: "Never miss a follow-up or interview again.",
+    desc: "Never miss another follow-up or interview again.",
     icon: <CalendarClock className="w-5 h-5 text-orange-600" />,
     iconBg: "bg-orange-50"
   },
@@ -184,45 +184,45 @@ const Home = () => {
                 <img 
                   src={dark ? ImgDark : ImgLight} 
                   alt={dark ? "Template Dark" : "Template Light"} 
-                  className="w-full max-w-[600px] h-auto rounded-lg shadow-[0px_10px_20px_0px_rgba(16,16,18)]" 
+                  className="w-full max-w-150 h-auto rounded-lg shadow-[0px_10px_20px_0px_rgba(16,16,18)]" 
                 />
               </div>
             </div>
           </div>
 
                     {/* Stay on top of your search */}
-              <section className="py-16 px-6 md:px-12 bg-[rgb(var(--bg))] ">
-          <div className="max-w-7xl mx-auto">
-            
-            {/* Title */}
-            <h2 className="text-center text-2xl md:text-3xl font-bold text-[rgb(var(--text))] mb-12">
-              Everything you need to stay <span className="text-[rgb(var(--primary))]">on top of your job search</span> 
-            </h2>
+           <section className="py-16 px-6 md:px-12 bg-[rgb(var(--bg))] ">
+              <div className="max-w-7xl mx-auto">
+                
+                {/* Title */}
+                <h2 className="text-center text-2xl md:text-3xl font-bold text-[rgb(var(--text))] mb-12">
+                  Everything you need to stay <span className="text-[rgb(var(--primary))]">on top of your job search</span> 
+                </h2>
 
-            {/* Horizontal List */}
-            <div className="flex flex-wrap justify-center lg:justify-between gap-y-5 gap-x-2">
-              {quickFeatures.map((item, index) => (
-                <div key={index} className="flex items-start gap-4 max-w-[240px] p-4 rounded-2xl border border-[rgba(var(--card-border))] bg-[rgb(var(--card-bg))] transition-all duration-300 hover:shadow-lg hover:border-[rgb(var(--primary))]">
-                  {/* Icon Box */}
-                  <div className={`shrink-0 w-12 h-12 rounded-xl flex items-center justify-center ${item.iconBg} dark:bg-opacity-10`}>
-                    {item.icon}
-                  </div>
-                  
-                  {/* Text */}
-                  <div className="flex flex-col gap-1">
-                    <h4 className="font-bold text-[rgb(var(--text))] leading-tight">
-                      {item.title}
-                    </h4>
-                    <p className="text-sm text-[rgb(var(--text))] opacity-60 leading-snug">
-                      {item.desc}
-                    </p>
-                  </div>
+                {/* Horizontal List */}
+                <div className="flex flex-wrap justify-center lg:justify-between gap-y-2 gap-x-2">
+                  {quickFeatures.map((item, index) => (
+                    <div key={index} className="flex items-start gap-4 sm:max-w-60 md:max-w-80 lg:max-w-70 p-4 rounded-2xl border border-[rgba(var(--card-border))] bg-[rgb(var(--card-bg))] transition-all duration-300 hover:shadow-lg hover:border-[rgb(var(--primary))]">
+                      {/* Icon Box */}
+                      <div className={`shrink-0 w-12 h-12 rounded-xl flex items-center justify-center ${item.iconBg} dark:bg-opacity-10`}>
+                        {item.icon}
+                      </div>
+                      
+                      {/* Text */}
+                      <div className="flex flex-col gap-1">
+                        <h4 className="font-bold text-[rgb(var(--text))] leading-tight">
+                          {item.title}
+                        </h4>
+                        <p className="text-sm text-[rgb(var(--text))] opacity-60 leading-snug">
+                          {item.desc}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
 
-          </div>
-        </section>
+              </div>
+           </section>
 
                                 {/* What we do */}
               <section className="py-20 px-6 md:px-12 bg-[rgb(var(--bg))]">
@@ -278,7 +278,7 @@ const Home = () => {
                       <img 
                         src={Illustration} 
                         alt="illustration" 
-                        className="w-full max-w-[500px] h-auto drop-shadow-2xl transition-transform duration-500 hover:scale-105"
+                        className="w-full max-w-125 h-auto drop-shadow-2xl transition-transform duration-500 hover:scale-105"
                       />
                     </div>
 
@@ -351,7 +351,7 @@ const Home = () => {
                 {reviews.map((review) => (
                   <div 
                     key={review.id}
-                    className="min-w-[85%] md:min-w-[400px] snap-center p-8 rounded-3xl border border-[rgba(var(--card-border))] bg-[rgb(var(--card-bg))] flex flex-col justify-between"
+                    className="min-w-[85%] md:min-w-100 snap-center p-8 rounded-3xl border border-[rgba(var(--card-border))] bg-[rgb(var(--card-bg))] flex flex-col justify-between"
                   >
                     
                     <div className="mb-6">
