@@ -46,14 +46,14 @@ The project follows a modular React architecture:
 📦 Installation & Setup
 Clone the repository:
 
-\`\`\`bash
+```bash
 git clone https://github.com/your-username/suivi-job-tracker.git
 Install dependencies:
 
-''' Bash
+```Bash
 npm install
 Run the development server:
 
-''' Bash
+```Bash
 npm run dev
 Created by a Professional Brand Designer & Web Developer.
