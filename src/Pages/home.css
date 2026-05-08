@@ -1,0 +1,9 @@
+@layer components {
+  .priorities {
+    box-shadow: var(--shadow-xl);
+    border-radius: var(--radius-lg);
+    padding: 1rem 1.5rem;
+    background-color: rgb(var(--card-bg));
+    border: 1px solid rgb(var(--card-border));
+  }
+}
