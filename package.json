@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://teatech-tbks.github.io/suivi-job-tracker/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
