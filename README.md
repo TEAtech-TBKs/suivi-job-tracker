@@ -32,7 +32,7 @@ Newsletter Integration: Fully styled footer with newsletter signup and multi-col
 
 Theme Engine: Persistent Dark/Light mode toggle with system preference detection and localStorage support.
 
-## 🛠️ Project Status
+## Project Status
 This is currently a **Frontend-only** implementation focused on UI/UX and brand identity. 
 Future updates will include a Node.js/Express backend and MongoDB integration to complete the MERN stack.
 
@@ -43,17 +43,27 @@ The project follows a modular React architecture:
 - `/src/assets`: Managed brand assets (Logos/Illustrations).
 - `index.css`: Global design tokens and Tailwind configuration.
 
-📦 Installation & Setup
+## 📦 Installation & Setup
+Clone the repository:
+
 Clone the repository:
 
 ```bash
 git clone https://github.com/your-username/suivi-job-tracker.git
+```
+
 Install dependencies:
 
-```Bash
+```bash
 npm install
+```
+
 Run the development server:
 
-```Bash
+```bash
 npm run dev
+```
+
+---
+
 Created by a Professional Brand Designer & Web Developer.
