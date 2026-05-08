@@ -1,5 +1,5 @@
-## Suivi | Professional Job Search Tracker 
-Suivi is a high-performance, minimalist job application tracker designed for professionals who demand clarity and structure in their career journey. Built with a focus on brand-centric design and utility-first development, Suivi offers a premium experience for managing applications, interviews, and follow-ups in one centralized platform.
+## Suivi | Professional Job Search Tracker (Frontend) 
+Suivi is a high-performance, minimalist frontend implementation of a job application tracker, designed for professionals who demand clarity and structure in their career journey. Built with a focus on brand-centric design and utility-first development, this interface offers a premium, responsive experience for visualizing applications, interviews, and follow-ups in one centralized platform.
 
 ## Technical Stack
 Frontend: React.js
@@ -32,17 +32,28 @@ Newsletter Integration: Fully styled footer with newsletter signup and multi-col
 
 Theme Engine: Persistent Dark/Light mode toggle with system preference detection and localStorage support.
 
+## 🛠️ Project Status
+This is currently a **Frontend-only** implementation focused on UI/UX and brand identity. 
+Future updates will include a Node.js/Express backend and MongoDB integration to complete the MERN stack.
+
+## 📁 Project Structure
+The project follows a modular React architecture:
+- `/src/components`: Reusable UI elements (Navbar, Footer, Toggle).
+- `/src/Pages`: Page-level components and layout logic.
+- `/src/assets`: Managed brand assets (Logos/Illustrations).
+- `index.css`: Global design tokens and Tailwind configuration.
+
 📦 Installation & Setup
 Clone the repository:
 
-Bash
+\`\`\`bash
 git clone https://github.com/your-username/suivi-job-tracker.git
 Install dependencies:
 
-Bash
+''' Bash
 npm install
 Run the development server:
 
-Bash
+''' Bash
 npm run dev
 Created by a Professional Brand Designer & Web Developer.
