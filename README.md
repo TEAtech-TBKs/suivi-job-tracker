@@ -49,7 +49,7 @@ Clone the repository:
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/suivi-job-tracker.git
+git clone https://teatech-tbks.github.io/suivi-job-tracker/
 ```
 
 Install dependencies:
